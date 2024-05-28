@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/registro.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registrarse</h1>
+    <table>
+        <tr>
+            <td>
+                <label for="nom">Nombre</label>
+            </td>  
+            <td>
+                <input type="text" id="nom">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="ape">Apellidos</label>
+            </td>
+            <td>
+                <input type="text" id="ape">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="e">Fecha de nacimiento</label>
+            </td>
+            <td>
+                <input type="date" id="fecha">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="gmail()">Generar</button>
+            </td>
+            <td>
+                <button onclick="refresh()">Reset</button>
+            </td>
+        </tr>
+    </table>
+    <section>
+        <h2>Correo generado:</h2>
+        <p id="respuesta" class="respuesta"></p>
+    </section>
+        <a href="index.html" style="width: 50px;"><input type="button" value="Volver" id="input"></a>
+    <script src="java/resgistro.js"></script>
+</body>
+</html>
